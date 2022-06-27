@@ -1,0 +1,20 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Components</title>
+  </head>
+  <style>
+    home-page {
+      --font-color: blue;
+    }
+    home-page::part(header) {
+      background: red;
+    }
+  </style>
+  <body>
+    <home-page></home-page>
+    <script src="./pages/Home.js"></script>
+  </body>
+</html>
