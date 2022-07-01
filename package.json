@@ -1,0 +1,25 @@
+{
+  "name": "web-components",
+  "version": "1.0.0",
+  "description": "Experimenting with Web Components",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild --bundle src/main.js --sourcemap --minify --outfile=dist/main.js",
+    "watch": "esbuild --bundle src/main.js --sourcemap --outfile=dist/main.js --watch",
+    "start": "esbuild --bundle src/main.js --sourcemap --outfile=dist/main.js --servedir=./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Codilot/web-components.git"
+  },
+  "author": "Codilot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Codilot/web-components/issues"
+  },
+  "homepage": "https://github.com/Codilot/web-components#readme",
+  "devDependencies": {
+    "esbuild": "^0.14.48"
+  }
+}

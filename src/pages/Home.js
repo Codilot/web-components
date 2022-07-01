@@ -9,7 +9,8 @@ class HomePage extends HTMLElement {
       font-family: sans-serif;
     }
     </style>
-    <h1 part="header">Home Page</h1>`;
+    <h1 part="header">Home Page</h1>
+    <flag-icon country="nl"></flag-icon>`;
   }
 }
 
