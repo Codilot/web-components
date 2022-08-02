@@ -1,2 +1,7 @@
-# web-components
-Experimenting with Web Components
+# Web Components Examples
+
+Web Components Learnings
+
+# Getting started
+
+run `npm run start` to start the web server with esbuild

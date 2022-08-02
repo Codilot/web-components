@@ -1,6 +1,7 @@
 // @ts-check
 import "../src/components/flag-icon.js";
-
+import "../src/components/word-count.js";
+import "../src/components/base-button.js";
 const css = `
 <style>
 h1 {
@@ -21,7 +22,10 @@ class AppMain extends HTMLElement {
       ? (this.shadowRoot.innerHTML = `
     ${css}
     <h1 part="header">Home Page</h1>
-    <flag-icon country="nl"></flag-icon>`)
+    <flag-icon country="nl"></flag-icon>
+    <word-count></word-count>
+    <base-button label="Click Me"></base-button>
+    `)
       : null;
   }
 }

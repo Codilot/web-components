@@ -7,4 +7,4 @@ class ExtendedButton extends HTMLButtonElement {
   }
 }
 
-customElements.define("base-button", ExtendedButton, { extends: "button" });
+customElements.define("extended-button", ExtendedButton, { extends: "button" });
