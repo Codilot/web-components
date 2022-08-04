@@ -114,12 +114,6 @@
           ? this.$select.classList.add("open")
           : this.$select.classList.remove("open");
       }
-
-      console.log(
-        "open",
-        this.open,
-        this.$select && this.$select.classList.length
-      );
     }
 
     render() {

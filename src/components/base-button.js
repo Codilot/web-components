@@ -110,7 +110,6 @@ class BaseButton extends HTMLElement {
   }
 
   render() {
-    console.log("button label", this.label);
     this.$button.innerHTML = this.label;
   }
 }
