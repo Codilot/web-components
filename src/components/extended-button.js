@@ -1,4 +1,4 @@
-class ExtendedButton extends HTMLButtonElement {
+export class ExtendedButton extends HTMLButtonElement {
   constructor() {
     super();
     this.style.backgroundColor = "blue";
@@ -6,5 +6,3 @@ class ExtendedButton extends HTMLButtonElement {
     this.addEventListener("click", () => alert("clicked"));
   }
 }
-
-customElements.define("extended-button", ExtendedButton, { extends: "button" });

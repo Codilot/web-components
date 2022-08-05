@@ -1,9 +1,4 @@
 // @ts-check
-import "../src/components/flag-icon.js";
-import "../src/components/word-count.js";
-import "../src/components/base-button.js";
-import "../src/components/base-select.js";
-
 const mainTemplate = document.createElement("template");
 const options = {
   option1: { label: "Option 1" },
@@ -12,18 +7,17 @@ const options = {
 mainTemplate.innerHTML = `
   <style>
   h1 {
-    color: var(--font-color, black);
+    color: var(--font-color, red);
     font-family: sans-serif;
   }
   </style>
-  <h1 part="header">Home Page</h1>
-  <flag-icon country="nl"></flag-icon>
-  <word-count></word-count>
   <base-button label="Click Me"></base-button>
-  <base-select label="Your Choice" options='{ "option1": { "label": "Option 1" }, "option2": { "label": "Option 2" } }'></base-select>
+  <base-select label="Your Choice" options=${encodeURIComponent(
+    JSON.stringify(options)
+  )}></base-select>
 `;
 
-class AppMain extends HTMLElement {
+export class AppMain extends HTMLElement {
   constructor() {
     super();
     this._shadowRoot = this.attachShadow({ mode: "open" });
@@ -40,5 +34,3 @@ class AppMain extends HTMLElement {
 
   render() {}
 }
-
-customElements.define("app-main", AppMain);

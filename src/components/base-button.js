@@ -40,7 +40,7 @@ baseButtonTemplate.innerHTML = `
       <button>${baseButtonLabel}</button>
     </div>`;
 
-class BaseButton extends HTMLElement {
+export class BaseButton extends HTMLElement {
   // By extending from the HTMLElement class, you will have access to various class methods
   // - for instance, lifecycle callbacks.
 
@@ -113,6 +113,3 @@ class BaseButton extends HTMLElement {
     this.$button.innerHTML = this.label;
   }
 }
-
-//To register a custom element on the page, you use the CustomElementRegistry.define() method.
-customElements.define("base-button", BaseButton);
