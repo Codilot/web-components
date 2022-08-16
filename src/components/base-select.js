@@ -93,10 +93,9 @@ export class BaseSelect extends HTMLElement {
   }
 
   get options() {
-    return parse((this.getAttribute && this.getAttribute("options")) || "");
-  }
-  set options(value) {
-    this.setAttribute("options", stringify(value));
+    return this.getAttribute("options")
+      ? parse(this.getAttribute("options"))
+      : "";
   }
 
   static get observedAttributes() {
@@ -130,7 +129,7 @@ export class BaseSelect extends HTMLElement {
       let $option = document.createElement("li");
       $option.innerHTML = option.label;
       $option.addEventListener("click", () => {
-        this.option = key;
+        this.option = this.options[key];
 
         this.toggleOpen();
 
