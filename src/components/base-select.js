@@ -129,7 +129,7 @@ export class BaseSelect extends HTMLElement {
       let $option = document.createElement("li");
       $option.innerHTML = option.label;
       $option.addEventListener("click", () => {
-        this.option = this.options[key];
+        this.option = option.label;
 
         this.toggleOpen();
 
