@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Experimenting with Web Components",
   "main": "index.html",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "esbuild --bundle src/index.js --sourcemap --minify --outfile=dist/index.js",
