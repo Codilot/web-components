@@ -1,8 +1,8 @@
 // @ts-check
 
-import { initComponents } from "./index.js";
+// import { initComponents } from "./index.js";
 
-initComponents(["base-button", "base-select"]);
+// initComponents(["base-button", "base-select"]);
 
 const mainTemplate = document.createElement("template");
 const options = {
