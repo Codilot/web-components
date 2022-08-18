@@ -107,6 +107,7 @@ export class BaseSelect extends HTMLElement {
   }
 
   toggleOpen(event) {
+    console.log(event);
     this.open = !this.open;
     if (!!this.$select) {
       this.open

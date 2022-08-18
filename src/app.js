@@ -1,4 +1,9 @@
 // @ts-check
+
+import { initComponents } from "./index.js";
+
+initComponents(["base-button", "base-select"]);
+
 const mainTemplate = document.createElement("template");
 const options = {
   option1: { label: "Option 1" },
