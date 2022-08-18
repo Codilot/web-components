@@ -107,7 +107,6 @@ export class BaseSelect extends HTMLElement {
   }
 
   toggleOpen(event) {
-    console.log(event);
     this.open = !this.open;
     if (!!this.$select) {
       this.open
@@ -131,8 +130,12 @@ export class BaseSelect extends HTMLElement {
       $option.innerHTML = option.label;
       $option.addEventListener("click", () => {
         this.option = option.label;
-
         this.toggleOpen();
+        this.dispatchEvent(
+          new CustomEvent("input", {
+            detail: "The base-select component has input",
+          })
+        );
 
         this.render();
       });
