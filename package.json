@@ -1,6 +1,6 @@
 {
   "name": "web-components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Experimenting with Web Components",
   "main": "src/index.js",
   "private": true,
