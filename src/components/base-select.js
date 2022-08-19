@@ -133,7 +133,7 @@ export class BaseSelect extends HTMLElement {
         this.toggleOpen();
         this.dispatchEvent(
           new CustomEvent("input", {
-            detail: "The base-select component has input",
+            detail: option,
           })
         );
 
