@@ -1,5 +1,5 @@
 // @ts-check
-import { stringify, parse } from "../helpers/transform";
+import { stringify, parse } from "./../../helpers/transform";
 const baseSelectLabel = "Label";
 const baseSelectOption = "Select Option";
 const baseSelectTemplate = document.createElement("template");

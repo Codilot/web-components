@@ -1,5 +1,5 @@
 import { html } from "lit-html";
-import "./index.js";
+import { BaseButton } from "./index.js";
 
 export default {
   title: "BaseButton",
@@ -45,5 +45,5 @@ const Template = ({ label, onClick, click }) =>
   ></base-button>`;
 
 //👇 Each story then reuses that template
-export const Base = Template.bind({});
-Base.args = { label: "Click Me" };
+export const Default = Template.bind({});
+Default.args = { label: "Click Me" };
