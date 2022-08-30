@@ -4,8 +4,9 @@
   "description": "Experimenting with Web Components",
   "main": "src/index.js",
   "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "build": "esbuild --bundle src/index.js --sourcemap --minify --outfile=dist/index.js",
     "watch": "esbuild --bundle src/index.js --sourcemap --outfile=dist/index.js --watch",
     "start": "esbuild --bundle src/index.js --sourcemap --outfile=dist/index.js --servedir=./",
@@ -30,10 +31,14 @@
     "@storybook/builder-webpack4": "^6.5.10",
     "@storybook/manager-webpack4": "^6.5.10",
     "@storybook/web-components": "^6.5.10",
-    "@types/node": "^18.6.4",
     "babel-loader": "^8.2.5",
-    "esbuild": "^0.14.48",
+    "esbuild": "^0.14.54",
+    "jest": "^29.0.1",
+    "jest-environment-jsdom": "^29.0.1",
     "lit-html": "^2.3.1"
   },
-  "dependencies": {}
+  "jest": {
+    "testEnvironment": "jsdom",
+    "transform": {}
+  }
 }
